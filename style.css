@@ -1,0 +1,476 @@
+/*basic css styling*/
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* define the header style for all pages*/
+header {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-align: center;
+    color: #20a3a3;
+    font-size: 3em;
+    padding: 0.5em;
+    text-shadow: 2px 2px #000;
+    border: 2px solid #196666;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px #000;
+    background-color: #ffffe6;
+}
+
+/*style navbar for colors page*/
+.navbarc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #f9d2f9, #eacf, #ccf, #cfc, #ffc, #fedc, #fcc);
+    background-size: 100% 100%;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #ecc6d9;
+}
+
+/*style navbar for fonts page*/
+.navbarf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(FONTS.jpg);
+    background-size: 100% 100%;
+    background-color: #196666;
+    background-blend-mode: multiply;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #000;
+}
+
+/*style navbar for text styles page*/
+.navbart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(TEXT_STYLES.jpg);
+    background-size: 100% 100%;
+    background-color: #cc6600;
+    background-blend-mode: multiply;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #000;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    justify-self: auto;
+}
+.navbar-links li a {
+    text-decoration: none;
+    padding: 1rem;
+    padding-right: 2rem;
+    display: block;
+    cursor: pointer;
+}
+
+.navbar-links li:hover {
+    background-color: #d9d9d9;
+}
+
+/*size 'Home, Colors, Text Style' on navbar*/
+.anchor {
+    font-size: 1.5em;
+}
+
+/*styling for 'Colors' on navbar*/
+.pagename-c {
+    font-size: 3em;
+    color: #cc6699;
+    padding: 2px;
+    text-shadow: 1px 1px;
+}
+
+/*styling for 'Fonts' on navbar*/
+.pagename-f {
+    font-size: 3em;
+    color: #999966;
+    padding: 2px;
+    text-shadow: 1px 1px;
+}
+
+/*styling for 'Text Styles' on navbar*/
+.pagename-t {
+    font-size: 3em;
+    color: #f37e09;
+    padding: 2px;
+    text-shadow: 1px 1px;
+}
+
+/*color of 'Home' on navbar*/
+.indexb a {
+    color: #20a3a3;
+    
+}
+
+/*color of 'Colors' on navbar*/
+.colorsb a {
+    color: #cc6699;
+  
+}
+/*color of 'Text styles' on navbar*/
+.fontsb a {
+    color: #999966;
+    
+}
+/*color of 'Text styles' on navbar*/
+.textstyleb a {
+    color: #f37e09;
+    
+}
+
+a {
+    text-decoration: none;
+        
+}
+
+/*style boxes on home page for Colors, Fonts, Text Styles*/
+.homepbox {
+    width: 20rem;
+    height: 10rem;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-weight: bolder; 
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 3%;
+    box-shadow: 7px 7px;
+    border-radius: 10px;
+}
+
+/*style the color box on the homepage*/
+.colors {
+    text-shadow: 2px 2px;
+    color: #cc6699;
+    background-image: linear-gradient(to right, #f9d2f9, #eacf, #ccf, #cfc, #ffc, #fedc, #fcc);
+    border: 3px solid #ac3972;
+}
+
+
+.colors a {
+        color: #cc6699;
+               
+}
+
+
+/*style the font box on the homepage*/
+.fonts {
+    color: #999966;
+    background: url(FONTS.jpg);
+    background-size: 100% 100%;
+    background-color: #196666;
+    background-blend-mode: multiply;
+    text-shadow: 2px 2px;
+    border: 3px solid #145252;
+}
+
+.fonts a {
+    color: #999966;
+}
+
+/*style the text style box on the home page*/
+.textstyles {
+    color: #f37e09;
+    background: url(TEXT_STYLES.jpg);
+    background-size: 100% 100%;
+    background-color: #cc6600;
+    background-blend-mode: multiply; 
+    text-shadow: 2px 2px;
+    border: 3px solid #994d00;  
+}
+
+.textstyles a {
+    color: #f37e09;
+}
+
+/*styling for colors container*/
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+    background-image: linear-gradient(to left, #f9d2f9, #eacf, #ccf, #cfc, #ffc, #fedc, #fcc);
+    border: 3px solid #ac3972;
+    box-shadow: 7px 7px 7px 7px #ac3972;
+    border-radius: 10px;
+    margin: 3%;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-areas: 
+    ' . redhead redhead redhead .'
+    ' . greenhead greenhead greenhead .'
+    ' . bluehead bluehead bluehead .';
+}
+
+/*red box area styling*/
+.redhead {
+    grid-area: redhead;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr 0.5fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: 
+    ' . . . . . . .'
+    ' . redbox1 . redbox2 . redbox3 .'
+    ' . . . . . . .'
+    ;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    padding-left: 10px;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+.redbox1 {
+    grid-area: redbox1;
+    border: 2px solid #800000;
+    background-color: #b30000;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;       
+}
+
+.redbox2 {
+    grid-area: redbox2;
+    background-color: #ff1a1a;
+    border: 2px solid #800000;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.redbox3 {
+    grid-area: redbox3;
+    border: 2px solid #800000;
+    background-color: #ff8080;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+/*green box area styling*/
+.greenhead {
+    grid-area: greenhead;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr 0.5fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: 
+    ' . . . . . . .'
+    ' . greenbox1 . greenbox2 . greenbox3 .'
+    ' . . . . . . .'
+    ;
+    border: 1px solid #008000;
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+.greenbox1 {
+    grid-area: greenbox1;
+    background-color: #00b300;
+    border: 2px solid #008000;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.greenbox2 {
+    grid-area: greenbox2;
+    background-color: #1aff1a;
+    border: 2px solid #008000;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.greenbox3 {
+    grid-area: greenbox3;
+    background-color: #80ff80;
+    border: 2px solid #008000;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+/*blue box area styling*/
+.bluehead {
+    grid-area: bluehead;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr 0.5fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: 
+    ' . . . . . . .'
+    ' . bluebox1 . bluebox2 . bluebox3 .'
+    ' . . . . . . .'
+    ;
+    border: 1px solid #000080;
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+.bluebox1 {
+    grid-area: bluebox1;
+    background-color: #0000b3;
+    background-blend-mode: multiply;
+    border: 2px solid #000080;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.bluebox2 {
+    grid-area: bluebox2;
+    background-color: #1a1aff;
+    border: 2px solid #000080;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.bluebox3 {
+    grid-area: bluebox3;
+    background-color: #8080ff;
+    border: 2px solid #000080;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+/*Style text in boxes */
+.parfont{
+    font-size: 0.40em;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 25;
+}
+
+/*define the grid for the text styles*/
+.tstylef {
+    width: auto;
+    border: 2px solid #196666;
+    margin: 2rem;
+    padding: 1rem 3rem 3rem 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px ;
+    
+ }
+
+/* border the text styles and fonts*/
+.tstylet {
+    width: auto;
+    margin: 2rem;
+    padding: 1rem 3rem 3rem 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px ;
+    background-color: #cc6600;
+    background-blend-mode: multiply; 
+    
+    border: 3px solid #994d00;  
+ }
+
+ /*grid, wrapper, fonts, background of text styles*/
+.grid {
+    display: grid;
+    grid-template: 1fr 2fr 1fr 2fr 1fr;
+    gap: 20px; 
+    
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+    '. lato . ngothic .'
+    ' . . . . .'
+    '. montserrat . mukta .';
+    grid-template-rows: 250px auto;
+    line-height: 1.5;
+    box-shadow: 4px 4px 4px 4px ;
+    background-color: #999966;
+    border-radius: 10px;
+}
+
+/*style font */
+.lato {
+    grid-area: lato;
+    padding: 1%;
+    font-family: 'Lato', sans-serif;
+}
+
+.fonthead {
+    font-weight: 900;
+    font-size: 1rem;
+    text-decoration: underline
+   
+}
+.fontbold {
+    font-weight: bold;
+}
+
+.fontital {
+    font-style:italic
+}
+
+.fontnorm {
+    font-style: normal
+}
+
+.ngothic {
+    grid-area: ngothic;
+    padding: 1%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.montserrat {
+    grid-area: montserrat;
+    padding: 1%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mukta {
+    grid-area: mukta;
+    padding: 1%;
+    font-family: 'Mukta', sans-serif;
+   }
+
+
